@@ -1,0 +1,51 @@
+<div class="card p-25">
+    <div class="card-header text-left pt-5">
+        <span class="card-title ">
+            Order Summary
+        </span>
+    </div>
+    <div class="card-body ">
+        <ul class="cart-list p-0">
+            <app-list-item *ngFor="let item of cartList" [title]="item.name" [quantity]="item.quantity"
+                [price]="item.price" [section]="'cart'">
+            </app-list-item>
+        </ul>
+    </div>
+    <hr class="divider">
+    <div class="text-left pt-20">
+        <span class="subtotal">
+            Subtotal
+        </span>
+    </div>
+    <div class="taxes-section">
+        <ul class="cart-list p-0 mt-0">
+            <app-list-item [title]="'Subtotal'" [price]="subTotal" [section]="'subtotal'"></app-list-item>
+            <app-list-item [title]="'Taxes'" [price]="taxes" [section]="'subtotal'"></app-list-item>
+        </ul>
+    </div>
+    <hr class="divider">
+
+    <div class="total-section">
+        <ul class="cart-list p-0">
+            <app-list-item [title]="'Total'" [price]="total" [section]="'total'"></app-list-item>
+        </ul>
+    </div>
+
+    <div class="promo-section pt-15">
+        <div class="text" (click)="showPromoInput()">
+            Have a promo code?
+        </div>
+        <div class="input-section mt-10" *ngIf="promoInput">
+            <div >
+                <input class="promo-input" type="text" placeholder="Promo Code" />
+            </div>
+            <div class="button">
+                <button class="apply-btn">
+                    APPLY
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
+</div>

@@ -1,0 +1,45 @@
+.accordion-controller {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.accordion-controller .active{
+    -webkit-transform: rotate(-180deg);
+     -moz-transform: rotate(-180deg);
+}
+.card-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: left;
+    color: #000000;
+    position: relative;
+    padding-top:15px;
+}
+.card-header.active{
+    padding-top:30px !important;
+}
+.accordion-head {
+  cursor: pointer;
+}
+.accordion-body {
+  display: none;
+}
+.accordion-body.active {
+  display: block;
+  -webkit-animation: fadeIn .3s;
+  animation: fadeIn .3s;
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+}  
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+

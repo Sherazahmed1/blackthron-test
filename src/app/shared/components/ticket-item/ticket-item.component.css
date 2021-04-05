@@ -1,0 +1,93 @@
+.offers-box>form {
+    display: flex;
+}
+
+.offers-box-with-image {
+    display: flex;
+    margin-top: 30px;
+}
+
+.offers-box {
+    display: flex;
+    width: 100%;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.offers-box>h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.offers-box>p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.offers-box>h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    color: #eb7092;
+}
+
+.ticket-price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.offers-select-quantity {
+    height: 32px;
+    width: 50px;
+    padding: 5px 5px 5px 8px;
+    background: #ffffff;
+    border: 0.5px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 25px;
+}
+
+.offer-alert {
+    margin-top: 30px;
+    background: rgba(225, 218, 207, 0.31);
+    border-radius: 4px;
+    padding: 10px 0 11px 19px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.image-box {
+    width: 81px;
+    height: 123px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.image-box>img {
+    width: 81px;
+    height: 123px;
+}
+
+.waitlist {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sale-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #706E6B;
+}

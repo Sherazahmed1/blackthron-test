@@ -1,0 +1,37 @@
+
+
+<div class="card-body-content">
+
+    <form [formGroup]="ticketForm" (ngSubmit)="onSubmit()" novalidate>
+        <div formGroupName="ticketData">
+            <div class="person-name">
+                <div class="w-100">
+                    <div class="form-control text-start"> <input class="p-5" formControlName="firstName"
+                            placeholder="First Name" /></div>
+                </div>
+                <div class="w-100">
+                    <div class="form-control text-end"> <input class="p-5" formControlName="lastName"
+                            placeholder="Last Name" /></div>
+                </div>
+            </div>
+            <div class="form-control mt-15">
+                <input class="p-5" formControlName="email" placeholder="Email" />
+            </div>
+
+            <div class="form-control mt-15">
+                <input class="p-5" formControlName="jobTitle" placeholder="Job Title" />
+            </div>
+
+            <div class="form-control mt-15">
+                <input class="p-5" formControlName="company" placeholder="Company" />
+            </div>
+
+            <div class="form-control mt-15">
+                <select formControlName="country" placeholder="Country">
+                    <option *ngFor="let opt of countryList"  [value]="opt.code">{{opt.name}}
+                    </option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>

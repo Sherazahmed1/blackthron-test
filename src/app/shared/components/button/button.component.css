@@ -1,0 +1,24 @@
+.checkout-btn.blur {
+    opacity: 0.5;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    background: #0eb58a;
+    border-radius: 6px;
+    color: #ffffff;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.checkout-btn:focus {
+    outline: 0;
+}

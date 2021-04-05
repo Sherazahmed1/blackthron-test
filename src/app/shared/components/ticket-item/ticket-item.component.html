@@ -1,0 +1,36 @@
+<div class="offers-box" [ngStyle]="{'border-bottom': (item.type!='book') ? '2px solid #dddbda' : 'none'}">
+    <ng-container *ngIf="item.type=='book'">
+        <div class="image-box">
+            <img [src]="item.imageUrl" alt="no image" />
+        </div>
+    </ng-container>
+
+    <div class="w-100">
+        <h3>{{item.title}}</h3>
+        <p>
+            {{item.description}}
+        </p>
+        <ng-container *ngIf="item.type!='donate'">
+            <h5 class="sale-text">{{item.saleText}}</h5>
+            <ng-container *ngIf="item.price==0">
+                <span class="ticket-price">Free</span>
+            </ng-container>
+            <ng-container *ngIf="item.price!=0">
+                <span class="ticket-price">{{item.price | currency}}</span>
+            </ng-container>
+            <select [value]="item.selected" class="offers-select-quantity" (change)="changehandler($event)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <ng-container *ngIf="item.alert && item.options !== 0 ">
+                <div class="offer-alert">Only {{3-item.options}} tickets available.<a  class="ml-5 color-blue waitlist">Join waitlist</a>
+                </div>
+            </ng-container>
+
+        </ng-container>
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p {
+    margin: 0px;
+}
+
+.cart{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.subtotal {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.total {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}

@@ -1,0 +1,58 @@
+.main-div {
+    display: flex;
+}
+
+.chip {
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.chip:hover {
+    transform: scale(1.1);
+    border: 1px solid #000000;
+}
+
+.active {
+    background: #7D7D7D;
+    color: white;
+}
+
+.input-amount {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 145px
+}
+
+.input-amount>input {
+    background: #ffffff;
+    width: 100px;
+}
+
+.input-amount input:focus {
+    outline: 0;
+}
+
+.input-amount-label {
+    border: none;
+    border-right: 1px solid #c4c4c4;
+    border-radius: 0px;
+    padding: 6px 10px
+}
+
+.input-amount-input {
+    border: none;
+}

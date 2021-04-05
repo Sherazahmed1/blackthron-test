@@ -1,0 +1,11 @@
+<div class="main-div">
+    <span class="chip mr-5" [class.active]="option.checked" *ngFor="let option of options"
+        (click)="onChipClick(option)">
+        ${{option.value }}
+    </span>
+    <div class="input-amount">
+        <label class="input-amount-label">$</label>
+        <input class="input-amount-input p-5" type="number" [value]="inputValue" min="0" placeholder="Enter amount" (input)="onInputChange($event)" />
+    </div>
+</div>
+

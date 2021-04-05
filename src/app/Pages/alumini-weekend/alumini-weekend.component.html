@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="main-section">
+    <div class="offers-widget">
+      <app-ticket-item [item]="ticket" *ngFor="let ticket of listItems">
+        <ng-container *ngIf="ticket.type=='donate'">
+          <h5 class="exception">I want to Donate</h5>
+          <app-donate-options [selected]="donationDefault"></app-donate-options>
+        </ng-container>
+      </app-ticket-item>
+    </div>
+    <div class="ml-20">
+      <app-cart></app-cart>
+      <app-button [text]="'Checkout'" [blur]="false" [url]="'checkout'"></app-button>
+    </div>
+  </div>
+</div>

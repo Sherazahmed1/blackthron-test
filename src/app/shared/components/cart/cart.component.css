@@ -1,0 +1,57 @@
+.card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.cart-list {
+    list-style: none;
+}
+
+.subtotal {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.divider {
+    border: 1px solid #DDDBDA;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.promo-section .text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0070D2;
+    text-align: left;
+    cursor: pointer;
+}
+
+.promo-section .input-section {
+    display: flex;
+    justify-content: space-between
+}
+
+.promo-input {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height:38px;
+    padding:5px;
+}
+
+.apply-btn {
+    background: #FFFFFF;
+    border: 1px solid #0EB58A;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #0EB58A;
+    padding:10px 20px
+}

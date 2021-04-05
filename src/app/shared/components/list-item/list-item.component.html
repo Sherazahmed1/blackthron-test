@@ -1,0 +1,11 @@
+<li class="text-left item pt-10" class="{{section}}">
+    <p>
+        <ng-container *ngIf="section=='cart' && title!='Donation'">
+            <span>{{quantity}}</span> x
+        </ng-container>
+        <span>{{title}}</span>
+    </p>
+    <p>
+        <span>{{price | currency}}</span>
+    </p>
+</li>
